@@ -1,0 +1,107 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+body {
+    max-width: 1440px;
+    background-color: hsl(359, 100%, 0%);
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.rating-component {
+    display:block;
+    margin: 10% auto 0;
+    width: 300px; 
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    padding: 40px 30px; 
+    border-radius: 20px; 
+}
+
+.rating-component .star-svg > svg {
+    background: hsl(213, 19%, 18%);
+    border-radius: 100px;
+    padding: 20px;
+
+}
+
+.rating-component h2{
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.rating-component > p {
+    font-size: 15px;
+}
+
+.rating-buttons {
+    list-style: none inside;
+    display:inline-flex;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.rating-buttons > li {
+    padding: 15px 19px 11px;
+    background: hsl(213, 19%, 18%);
+    border-radius: 35px;
+    margin: 0px 8px;
+   
+}
+
+/* .rating-buttons > li:active{
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+} */
+
+.rating-buttons > li:first-child {
+    margin-left: 0px;
+}
+
+.rate:hover,
+.rate:active, 
+.rate:focus,
+.rate:target,
+.rate.active{
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rate.inactive{
+    background: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit-button {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    border: 0 none;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+}
+
+.submit-button:hover {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    border: 0 none;
+    letter-spacing: 2px;
+    color: hsl(25, 97%, 53%);
+}
+
+.attribution{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+/* Thank You Page */
