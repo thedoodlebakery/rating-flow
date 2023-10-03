@@ -1,7 +1,7 @@
 const userRatingForm = document.getElementById("ratingForm");
 const userRate = document.getElementsByClassName("rate");
 const parentUL = document.getElementById('rating-btns');
-const btns = parentUL.getElementsByTagName('li');
+const btns = parentUL.getElementsByTagName('input');
 
 let selectedValue = 0;
 
@@ -13,8 +13,8 @@ function pickRating(u){
 
 // handles assigning classes to the rating buttons
 
-for (li of btns){
-    li.addEventListener("click", function(){
+for (const btn of btns){
+    btn.addEventListener("click", function(){
         if (this.classList.contains('inactive')){
             this.classList.remove('inactive');
         } else if (this.classList.contains('active')){

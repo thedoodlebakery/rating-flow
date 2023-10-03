@@ -40,36 +40,30 @@ body {
     margin-bottom: 30px;
 }
 
-.rating-buttons > li {
+.rate {
     padding: 15px 19px 11px;
     background: hsl(213, 19%, 18%);
     border-radius: 35px;
-    margin: 0px 8px;
+    margin: 0px 17px;
+    border: 0;
+    color:hsl(0, 0%, 100%);
    
 }
 
-/* .rating-buttons > li:active{
-    background: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-} */
-
-.rating-buttons > li:first-child {
+.rate:first-child {
     margin-left: 0px;
 }
 
 .rate:hover,
-.rate:active, 
-.rate:focus,
-.rate:target,
 .rate.active{
     background: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.rate.inactive{
+/* .rate.inactive{
     background: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
-}
+} */
 
 .submit-button {
     width: 100%;
