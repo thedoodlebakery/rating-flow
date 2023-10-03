@@ -23,7 +23,8 @@ for (li of btns){
         } else {
             this.classList.add('active');
         }
-    })
+
+    });
 }
 
 userRatingForm.addEventListener("submit", (e) => {
@@ -33,24 +34,30 @@ userRatingForm.addEventListener("submit", (e) => {
     thankyouPage();
 });
 
+// Thank You Page
 function thankyouPage(){
-    console.log("User Rating: ", selectedValue);
+   
     const sect = document.querySelector('section');
     const svgImg = document.createElement('img');
     const newHead = document.createElement('h1');
+
+    if(sect.classList.contains('hidden')){
+        sect.classList.remove('hidden');
+        
+    }
 
     sect.appendChild(svgImg);
     svgImg.src = "./images/illustration-thank-you.svg";
     svgImg.setAttribute("class", "tySVG");
 
-    newHead.textContent = "Thank you!";
-    sect.appendChild(newHead);
-    newHead.setAttribute("class", "tyHead");
-    
     const message = document.createElement('p');
     message.textContent = `You selected ${selectedValue} out of 5`;
     sect.appendChild(message);
     message.setAttribute("class", "tyResponse");
+
+    newHead.textContent = "Thank you!";
+    sect.appendChild(newHead);
+    newHead.setAttribute("class", "tyHead");
 
     const newPara = document.createElement('p');
     sect.appendChild(newPara);
